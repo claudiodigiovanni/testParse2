@@ -33,11 +33,7 @@ angular.module('starter.services', [])
 
   return {
     all: function() {
-      var Ufficio = Parse.Object.extend("Ufficio");
-      var ufficio = new Ufficio();
-      ufficio.set("via", "via111");
-      ufficio.set("comune", "comune111");
-      ufficio.save(null, {});
+      
       return chats;
     },
     remove: function(chat) {

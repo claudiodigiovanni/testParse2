@@ -5,6 +5,17 @@
       <div class="item item-body">
         <div>
           There is a fire in <b>sector 3</b>
+          <input type="text" name="search" ng-keydown='loadData()' ng-model="model.search">
+          <div class="list card" ng-repeat="d in data.res">
+
+            <a href="#" class="item item-icon-left">
+              <i class="icon ion-home"></i>
+               {{d.get('via')}}
+            </a>
+
+
+
+          </div>
         </div>
       </div>
     </div>
